@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -13,15 +11,11 @@
     --foreground: #ededed;
   }
 }
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+
 
 body {
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
 }
 h1,
 .h1,
@@ -37,4 +31,374 @@ h6,
 .h6 
 p {
   font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  /* color: #000; */
+}
+section {
+  position: relative;
+  padding: 100px 0;
+  width: 100%;
+  max-width:1960px;
+  margin: 0 auto;
+  overflow-x: clip;
+}
+
+.h1,
+h1 {
+  font-size: 48px;
+  line-height: 1.41;
+  font-weight: 500;
+}
+.h1 span,
+h1 span {
+  font-size: 67px;
+}
+
+.h2,
+h2 {
+  font-size: 38px;
+  line-height: 1.39;
+  font-weight: 500;
+}
+.h3,
+h3 {
+  font-size: 32px;
+  line-height: 1.34;
+  font-weight: 500;
+}
+.h4,
+h4 {
+  font-size: 25px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+.h5,
+h5 {
+  font-size: 21px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+.h6,
+h6 {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+p {
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+.small_font {
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+p span {
+  font-weight: 700;
+}
+p a {
+  text-decoration: underline;
+}
+
+.padding-large{
+  padding: 120px 0;
+}
+.padding-large-top{
+  padding-top: 120px;
+}
+.padding-large-bottom{
+  padding-bottom: 120px;
+}
+.padding-medium{
+  padding: 70px 0;
+}
+.padding-medium-top{
+  padding-top: 70px;
+}
+.padding-medium-bottom{
+  padding-bottom: 70px;
+}
+.padding-small{
+  padding: 40px 0;
+}
+.padding-small-top{
+  padding-top: 40px;
+}
+.padding-small-bottom{
+  padding-bottom: 40px;
+}
+.no-padding{
+  padding: 0 !important;
+}
+.no-padding-top{
+  padding-top: 0 !important;
+}
+.no-padding-bottom{
+  padding-bottom: 0 !important;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  max-width: 1380px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1025px) and (max-width: 1366px) { 
+  .h1,
+    h1 {
+      font-size: 42px;
+    }
+    .h1 span,
+    h1 span {
+      font-size: 54px;
+    }
+    .h2,
+    h2  {
+      font-size: 32px;
+    }
+    .h3,
+    h3 {
+      font-size: 30px;
+    }
+    .h4,
+    h4 {
+      font-size: 24px;
+    }
+    section {
+      padding: 80px 0;
+    }
+    .padding-large{
+      padding: 100px 0;
+    }
+    .padding-large-top{
+      padding-top: 100px;
+    }
+    .padding-large-bottom{
+      padding-bottom: 100px;
+    }
+    .padding-medium{
+      padding: 60px 0;
+    }
+    .padding-medium-top{
+      padding-top: 60px;
+    }
+    .padding-medium-bottom{
+      padding-bottom: 60px;
+    }
+    .padding-small{
+      padding: 30px 0;
+    }
+    .padding-small-top{
+      padding-top: 30px;
+    }
+    .padding-small-bottom{
+      padding-bottom: 30px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .h1,
+    h1 {
+      font-size: 40px;
+    }
+    .h1 span,
+      h1 span {
+        font-size: 48px;
+      }
+    .h2,
+    h2  {
+      font-size: 30px;
+    }
+    .h3,
+    h3 {
+      font-size: 28px;
+    }
+    .h4,
+    h4 {
+      font-size: 22px;
+    }
+    .h5,
+    h5 {
+      font-size: 18px;
+    }
+    p,
+    .h6,
+    h6 {
+      font-size: 16px;
+    }
+    section {
+      padding: 60px 0;
+    }
+    .padding-large{
+      padding: 80px 0;
+    }
+    .padding-large-top{
+      padding-top: 80px;
+    }
+    .padding-large-bottom{
+      padding-bottom: 80px;
+    }
+    .padding-medium{
+      padding: 40px 0;
+    }
+    .padding-medium-top{
+      padding-top: 40px;
+    }
+    .padding-medium-bottom{
+      padding-bottom: 60px;
+    }
+    .padding-small{
+      padding: 20px 0;
+    }
+    .padding-small-top{
+      padding-top: 20px;
+    }
+    .padding-small-bottom{
+      padding-bottom: 20px;
+    }
+}
+@media (min-width: 595px) and (max-width: 767px) {
+  .h1,
+    h1 {
+      font-size: 36px;
+    }
+    .h1 span,
+    h1 span {
+      font-size: 42px;
+    }
+    .h2,
+    h2  {
+      font-size: 28px;
+    }
+    .h3,
+    h3 {
+      font-size: 24px;
+    }
+    .h4,
+    h4 {
+      font-size: 22px;
+    }
+    .h5,
+    h5 {
+      font-size: 18px;
+    }
+    p,
+    .h6,
+    h6 {
+      font-size: 16px;
+    }
+    section {
+      padding: 40px 0;
+    }
+    .padding-large{
+      padding: 60px 0;
+    }
+    .padding-large-top{
+      padding-top: 60px;
+    }
+    .padding-large-bottom{
+      padding-bottom: 60px;
+    }
+    .padding-medium{
+      padding: 30px 0;
+    }
+    .padding-medium-top{
+      padding-top: 30px;
+    }
+    .padding-medium-bottom{
+      padding-bottom: 30px;
+    }
+    .padding-small{
+      padding: 20px 0;
+    }
+    .padding-small-top{
+      padding-top: 20px;
+    }
+    .padding-small-bottom{
+      padding-bottom: 20px;
+    }
+}
+@media (max-width: 595px) {
+  .h1,
+    h1 {
+      font-size: 32px;
+    }
+    .h1 span,
+    h1 span {
+      font-size: 38px;
+    }
+    .h2,
+    h2  {
+      font-size: 24px;
+    }
+    .h3,
+    h3 {
+      font-size: 22px;
+    }
+    .h4,
+    h4 {
+      font-size: 20px;
+    }
+    .h5,
+    h5 {
+      font-size: 18px;
+    }
+    p,
+    .h6,
+    h6 {
+      font-size: 16px;
+    }
+    section {
+      padding: 40px 0;
+    }
+    .padding-large{
+      padding: 60px 0;
+    }
+    .padding-large-top{
+      padding-top: 60px;
+    }
+    .padding-large-bottom{
+      padding-bottom: 60px;
+    }
+    .padding-medium{
+      padding: 30px 0;
+    }
+    .padding-medium-top{
+      padding-top: 30px;
+    }
+    .padding-medium-bottom{
+      padding-bottom: 30px;
+    }
+    .padding-small{
+      padding: 20px 0;
+    }
+    .padding-small-top{
+      padding-top: 20px;
+    }
+    .padding-small-bottom{
+      padding-bottom: 20px;
+    }
+}
+
+.emptyLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  cursor: pointer;
+  z-index: 9;
+}
+
+/** Header **/
+header {
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
 }
