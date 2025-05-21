@@ -4,6 +4,7 @@ import TabWithImage from '@/components/TabWithImage'
 import Counter from '@/components/Counter'
 import Courses from '@/components/Courses'
 import QuoteSlider from '@/components/QuoteSlider'
+import ContactUs from '@/components/ContactUs'
 import { heroBannerData } from '@/public/data/heroBannerData'
 import { tabWithImageData } from '@/public/data/tabWithImageData'
 import { counterData } from '@/public/data/counterData'
@@ -20,6 +21,7 @@ export default function index() {
       <Counter data={counterData} />
       <Courses data={courseData} />
       <QuoteSlider data={quoteData} />
+      <ContactUs />
     </>
   )
 }
