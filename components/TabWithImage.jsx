@@ -1,34 +1,42 @@
 import React from 'react'
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function TabWithImage({data}) {
-  console.log(data);
+  const [setImage, isSetImage] = useState(0);
   
+  const myfunction = (i) => {
+      if(setImage == i) {
+        isSetImage(null)
+      }
+      isSetImage(i);
+  }
+
   return (
     <section className="tabWithImage">
         <div className="container">
             <div className="intro mb-[20px]">
-                <h2 className='text-black'>Our Services</h2>
+                <h2 className='text-black !font-[600] inline-block'>Our Services</h2>
             </div>
-            <div className="tabWrapper">
-                <div className="tabList w-[50%]">
+            <div className="tabWrapper flex w-[calc(100%+20px)] ml-[-10px] items-center">
+                <div className="tabList w-[50%] mx-[10px]">
                   {
                     data?.map((item, i) => {
                       return (
-                        <div key={i} className="item p-2 border-[1px] rounded-[5px] mb-[10px]">
-                          <h2 className='!text-[18px] font-[600]'>{item?.title}</h2>
+                        <div key={i} className={`item p-2 border-[1px] border-gray-200 rounded-[5px] mb-[10px] cursor-pointer ${setImage === i ? 'bg-sky-100' : ''}`} onClick={() => myfunction(i)} >
+                          <h2 className='!text-[18px] !font-semibold mb-[5px]'>{item?.title}</h2>
                           <p className='!text-[14px]'>{item?.description}</p>
                         </div>
                       )
                     })
                   }
                 </div>
-                <div className="imgWrapper w-[50%]">
+                <div className="imgWrapper w-[50%] mx-[10px]">
                   {
                     data?.map((item, i) => {
                       return (
-                          <div key={i} className="imgWrap">
-                            <Image src={''} alt='' width={''} height={''} />
+                          <div key={i} className={`imgWrap ${setImage === i ? 'block' : 'hidden'} max-h-[490px] overflow-hidden`}>
+                            <Image src={item?.image} alt={item?.alt} width={500} height={450} />
                           </div>
                         )
                       }
