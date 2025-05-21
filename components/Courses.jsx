@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { courseData } from '@/public/data/courseData'
 
-export default function Courses() {
+
+export default function Courses({data}) {
   return (
     <section className="courses ">
         <div className="container">
@@ -12,7 +12,7 @@ export default function Courses() {
             </div>
             <div className="cardWrapper flex w-[calc(100%+40px)] ml-[-20px]">
                 {
-                    courseData?.map((item, i) => {
+                    data?.map((item, i) => {
                         const title = item?.title;
                         const titleWithUrl = title.split(" ").join("-");
                         return (

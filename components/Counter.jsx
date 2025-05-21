@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function Counter({data}) {
-    console.log(data);
     
   return (
     <section className="counter bg-[#001f3d]">
