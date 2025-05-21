@@ -404,9 +404,13 @@ header {
 }
 
 /** QuoteSlider **/
-.quoteSlider .sliderWrap .slick-slider {
+.quoteSlider .sliderWrap .slick-list {
   padding: 20px 0;
 }
-.quoteSlider .sliderWrap .slick-slide {
-  margin: 0 10px;
+/* .quoteSlider .sliderWrap .slick-slide {
+  margin-left: 20px;
+} */
+
+.quoteSlider .sliderWrap .slick-slider ul.slick-dots {
+  margin-top: 20px;
 }

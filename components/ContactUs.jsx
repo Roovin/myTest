@@ -8,17 +8,20 @@ export default function ContactUs() {
     const [formSuccess, setFormSuccess] = useState(false);
 
     return (
-        <section className="contactUs">
+        <section className="contactUs bg-gray-50">
             <div className="container">
-                <div className="formWithImage flex w-[calc(100%+40px)] ml-[-20px]">
+                <div className="formWithImage flex w-[calc(100%+40px)] ml-[-20px] items-center">
                     <div className="imageWrapper w-[calc(50%-20px)] mx-[20px]">
-                        <Image src={'/contactUs/article_cover.jpg'} alt='' width={500} height={500} />
+                        <Image src={'/contactUs/article_cover.jpg'} alt='laptop with girl' className="rounded-[10px]" width={500} height={500} />
                     </div>
                     <div className="formWrap  w-[calc(50%-20px)] mx-[20px]">
+                        <div className="intro mb-[10px]">
+                            <h2 className="!font-[600]">Contact Us</h2>
+                        </div>
                         <form
                             className="w-[calc(100%+16px)] ml-[-8px] flex lg:flex-wrap md:mx-auto md:inline-grid md:w-full"
                         >
-                            <label htmlFor="firstName" className=" text-[0] ">
+                            <label htmlFor="firstName" className=" text-[0] mb-[10px] !font-[600] ">
                                 Name
                             </label>
                             <input
@@ -33,7 +36,7 @@ export default function ContactUs() {
                                 field="Name"
                                 errors={state.errors}
                             />
-                            <label htmlFor="email" className=" text-[0]  ">
+                            <label htmlFor="email" className=" text-[0] mb-[10px] !font-[600] ">
                                 Email
                             </label>
                             <input
@@ -41,23 +44,17 @@ export default function ContactUs() {
                                 type="email"
                                 name="email"
                                 placeholder="Email"
-                                className="w-full p-4 border border-gray-300 rounded-lg"
+                                className="w-full p-4 border border-gray-300 rounded-lg  mb-[40px]"
                             />
                             <ValidationError
                                 prefix="Email"
                                 field="email"
                                 errors={state.errors}
                             />
-                            <label htmlFor="Massage" className=" text-[0]  ">
+                            <label htmlFor="Massage" className=" text-[0] mb-[10px] !font-[600] ">
                                 Massage
                             </label>
-                            <input
-                                id="Massage"
-                                type="text"
-                                name="massage"
-                                placeholder="Massage"
-                                className="w-full p-4 border border-gray-300 rounded-lg "
-                            />
+                            <textarea id="message" class="w-full p-4 border border-gray-300 rounded-lg" rows="4" placeholder="Write your message" required="" autocomplete="off" spellcheck="false" />
                             <ValidationError
                                 prefix="Massage"
                                 field="Massage"
@@ -65,7 +62,7 @@ export default function ContactUs() {
                             />
                             <button
                                 type="submit"
-                                className="default h-full md:max-w-[150px] min-w-[150px] md:mx-auto"
+                                className="w-full py-3 bg-[#1d3c6b] mt-[30px] text-white font-bold rounded-md hover:bg-blue-800 transition duration-300"
                                 disabled={state.submitting}
                             >
                                 Sign Up
