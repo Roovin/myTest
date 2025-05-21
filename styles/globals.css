@@ -402,3 +402,11 @@ p a {
 header {
   box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
 }
+
+/** QuoteSlider **/
+.quoteSlider .sliderWrap .slick-slider {
+  padding: 20px 0;
+}
+.quoteSlider .sliderWrap .slick-slide {
+  margin: 0 10px;
+}
