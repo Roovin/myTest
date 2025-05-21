@@ -12,11 +12,12 @@ const slickSliderRef = useRef(null);
 
 const settings = {
 		dots: true,
-    arrows: false,
+    	arrows: false,
 		speed: 500,
 		slidesToShow: 3,
 		slidesToScroll: 1,
-    	centerPadding: '80px',
+    	centerPadding: '200px',
+		centerMode: true,
 		// initialSlide: slider,
 		responsive: [
 			{

@@ -405,11 +405,11 @@ header {
 
 /** QuoteSlider **/
 .quoteSlider .sliderWrap .slick-list {
-  padding: 20px 0;
+  padding: 20px 0 !important;
 }
-/* .quoteSlider .sliderWrap .slick-slide {
-  margin-left: 20px;
-} */
+.quoteSlider .sliderWrap .slick-slide {
+  margin: 0 10px;
+}
 
 .quoteSlider .sliderWrap .slick-slider ul.slick-dots {
   margin-top: 20px;
