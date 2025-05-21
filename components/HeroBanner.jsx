@@ -7,7 +7,7 @@ export default function HeroBanner({data}) {
   return (
     <section className="herobanner bg-[#1d3c6b] !pb-[0]">
         <div className="container !static">
-          <div className="imgWithText flex items-center pb-[80px] w-[calc(100%+40px)] ml-[-20px]">
+          <div className="imgWithText flex items-center pb-[80px]  w-[calc(100%+40px)] ml-[-20px]">
             <div className="text-Wrapper w-[50%] mx-[20px] pb-[30px]">
               <h1 className='text-white'>{data?.title}</h1>
               <p className='text-white'>{data?.description}</p>
