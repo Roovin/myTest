@@ -6,12 +6,12 @@ export const courseData = [
         description: "Learn how to build modern, responsive websites using HTML, CSS, JavaScript, React, Node.js, and more. Master front-end and back-end development, and become a full-stack developer.",
         btn: "Enroll Now",
         cardBtnUrl: "/courses/",
-        image: "",
-        alt: "",
+        image: "/courses/web.jpg",
+        alt: "laptop with girl",
         certifiedTitle: "Get Certified!",
         para: "Upon successful completion of the course, you will receive a certificate to showcase your skills.",
-        certiImage: "",
-        certiAlt: "",
+        certiImage: "/courses/certificate.jpg",
+        certiAlt: "Certificate",
         para1: "This certificate is a great addition to your resume, helping you stand out to potential employers."
     },
     {
@@ -21,12 +21,12 @@ export const courseData = [
         description: "Learn Data Science and become an expert in machine learning, data analysis, and much more. Take the first step in building a career in Data Science.",
         btn: "Enroll Now",
         cardBtnUrl: "/courses/",
-        image: "",
-        alt: "",
+        image: "/courses/Data.jpg",
+        alt: "Data Image",
         certifiedTitle: "Get Certified!",
         para: "Upon successful completion of the course, you will receive a certificate to showcase your skills.",
-        certiImage: "",
-        certiAlt: "",
+        certiImage: "/courses/certificate.jpg",
+        certiAlt: "Certificate",
         para1: "This certificate is a great addition to your resume, helping you stand out to potential employers."
     },
     {
@@ -37,12 +37,12 @@ export const courseData = [
         description1: "Our expert instructors will teach you how to craft successful campaigns that increase brand visibility and drive customer engagement.",
         btn: "Enroll Now",
         cardBtnUrl: "/courses/",
-        image: "",
-        alt: "",
+        image: "/courses/digital.jpg",
+        alt: "Digital",
         certifiedTitle: "Get Certified!",
         para: "Upon successful completion of the course, you will receive a certificate to showcase your skills.",
-        certiImage: "",
-        certiAlt: "",
+         certiImage: "/courses/certificate.jpg",
+        certiAlt: "Certificate",
         para1: "This certificate is a great addition to your resume, helping you stand out to potential employers."
     }
 ]
