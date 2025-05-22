@@ -416,11 +416,11 @@ header {
   padding: 20px 0 !important;
 }
 .quoteSlider .sliderWrap .slick-slide {
-  margin-right: 20px;
+  margin: 0 10px;
 }
-.quoteSlider .sliderWrap {
+/* .quoteSlider .sliderWrap {
   height: 280px;
-}
+} */
 .quoteSlider .sliderWrap .slick-slider {
   height: 100%;
 }
