@@ -16,14 +16,18 @@ export default function Courses({data}) {
                         const title = item?.title;
                         const titleWithUrl = title.split(" ").join("-");
                         return (
-                            <div key={i} className="card relative overflow-hidden group cursor-pointer mx-[20px] text-center rounded-[10px] p-[30px] max-md:w-[calc(50%-20px)] max-md:mx-[10px] max-md:last:mt-[20px] max-sm:w-full max-sm:mx-0 max-sm:mb-[20px] max-sm:last:mt-0 max-md:p-[20px]" >
+                            <div key={i} className="card relative overflow-hidden bg-gray-100 shadow-xs group cursor-pointer w-[calc(33.33%-20px)] mx-[20px] min-h- text-center rounded-[10px]  max-md:w-[calc(50%-20px)] max-md:mx-[10px] max-md:last:mt-[20px] max-sm:w-full max-sm:mx-0 max-sm:mb-[20px] max-sm:last:mt-0 max-md:p-[20px]" >
                                 <Link href={item?.cardBtnUrl + titleWithUrl} className='emptyLink !z-[99]'>.</Link>
-                                <div className="bgImg absolute top-0 left-0 w-full h-full ">
-                                    <Image src={item?.image} alt='' className='w-full h-full object-cover rounded-[10px] opacity-[0.3] group-hover:scale-[1.1] group-hover:opacity-[1] scale-[1] transition-all delay-[300] ease-in-out' width={400} height={400} />
+                                <div className="bgImg  w-full h-[230px]">
+                                    <Image src={item?.image} alt={item?.alt} className='w-full h-full object-cover rounded-[10px] opacity-[0.3]' width={400} height={400} />
                                 </div>
-                                <div className="textWrap z-[10] relative">
-                                    <h3 className='mb-[10px] text-black'>{item?.title}</h3>
-                                    <p className='text-black !font-[500]'>{item?.cardDescription}</p>
+                                <div className="textWrap z-[10]">
+                                    <div className="text-Wrapper absolute left-0 w-full bottom-0 p-[10px] pb-[5px] group-hover:bottom-[20px]">
+                                        <h3 className='mb-[10px] text-black'>{item?.title}</h3>
+                                        <div className="hiddenContent h-0 group-hover:h-full transition-all duration-[300]">
+                                            <p className='text-black !font-[500] truncate whitespace-normal line-clamp-2'>{item?.cardDescription}</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div> 
                         )
