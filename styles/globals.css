@@ -412,18 +412,9 @@ header {
    }
 }
 /** QuoteSlider **/
-.quoteSlider .sliderWrap .slick-list {
-  padding: 20px 0 !important;
+.quoteSlider .swiper-wrapper {
+  padding: 30px 0;
 }
-.quoteSlider .sliderWrap .slick-slide {
-  margin: 0 10px;
-}
-/* .quoteSlider .sliderWrap {
-  height: 280px;
-} */
-.quoteSlider .sliderWrap .slick-slider {
-  height: 100%;
-}
-.quoteSlider .sliderWrap .slick-slider ul.slick-dots {
-  margin-top: 20px;
+.quoteSlider .swiper {
+  padding: 30px 0;
 }
