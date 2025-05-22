@@ -42,7 +42,7 @@ export default function Header() {
                 {
                   headerData?.map((item, i) => {
                     return (
-                      <li key={i} className='mr-[20px] last:mr-[0] max-md:mr-[14px]'>
+                      <li key={i} className='mr-[20px] last:mr-[0] max-md:mr-[14px] max-md:mb-[10px] max-md:last:mb-0'>
                         <Link className='inline-block text-black hover:text-[#0018ef] font-[500] text-[18px] max-md:text-[14px]' href={item?.nav}>{item?.nav}</Link>
                       </li>
                     )
