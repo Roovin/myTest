@@ -19,9 +19,9 @@ export default function Course() {
                     {
                         courseData?.map((item, i) => {
                             return (
-                                <>
+                                <div key={i}>
                                     {item?.title === isValue ?
-                                        <div className="textWithImage flex w-[calc(100%+40px)] ml-[-20px]" key={i}>
+                                        <div className="textWithImage flex w-[calc(100%+40px)] ml-[-20px]" >
                                             <div className="content w-[calc(50%-20px)] mx-[20px]">
                                                 <h1>{item?.title}</h1>
                                                 <p>{item?.description}</p>
@@ -36,7 +36,7 @@ export default function Course() {
                                             </div>
                                         </div>
                                         : ''}
-                                </>
+                                </div>
                             )
                         })
                     }
@@ -48,7 +48,7 @@ export default function Course() {
                     {
                         courseData?.map((item, i) => {
                             return (
-                                <>
+                                <div key={i}>
                                     {item?.title === isValue ?
                                         <div className="certificate bg-gray-100 text-center py-[30px]">
                                             <h2>{item?.certifiedTitle}</h2>
@@ -57,7 +57,7 @@ export default function Course() {
                                             <p>{item?.para1}</p>
                                         </div>
                                     : ''}
-                                </>
+                                </div>
                             )
                         })
                     }
