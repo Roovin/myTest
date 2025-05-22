@@ -4,10 +4,10 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className='bg-gray-900 text-white mt-10 py-[50px]'>
+    <footer className='bg-gray-900 text-white mt-10 py-[50px] max-lg:mt-0'>
       <div className="container">
-        <div className="wrapper flex w-[calc(100%+40px)] ml-[-20px]">
-          <div className="item w-[calc(25%-20px)] mx-[20px]">
+        <div className="wrapper flex max-md:flex-wrap w-[calc(100%+40px)] ml-[-20px] max-md:w-[calc(100%+20px) max-md:ml-[-10px] max-sm:w-full max-sm:ml-0 max-sm:text-center">
+          <div className="item w-[calc(25%-20px)] mx-[20px] max-md:w-[calc(50%-20px)] max-md:mx-[10px] max-sm:w-full max-sm:mx-0 max-md:mb-[20px]">
             <h5 className='!text-[18px] !font-[600]'>IT Infrastructure Services</h5>
             <ul className='mt-[10px]'>
               <li className='my-[5px]'>
@@ -24,7 +24,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-           <div className="item w-[calc(25%-20px)] mx-[20px]">
+           <div className="item w-[calc(25%-20px)] mx-[20px] max-md:w-[calc(50%-20px)] max-md:mx-[10px] max-sm:w-full max-sm:mx-0 max-md:mb-[20px]">
             <h5 className='!text-[18px] !font-[600]'>Web Development & Design</h5>
             <ul className='mt-[10px]'>
               <li className='my-[5px]'>
@@ -44,7 +44,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-           <div className="item w-[calc(25%-20px)] mx-[20px]">
+           <div className="item w-[calc(25%-20px)] mx-[20px] max-md:w-[calc(50%-20px)] max-md:mx-[10px] max-sm:w-full max-sm:mx-0 max-sm:mb-[20px]">
             <h5 className='!text-[18px] !font-[600]'>Contact Us</h5>
             <ul className='mt-[10px]'>
               <li className='my-[5px]'>
@@ -60,9 +60,9 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="item w-[calc(25%-20px)] mx-[20px]">
+          <div className="item w-[calc(25%-20px)] mx-[20px] max-md:w-[calc(50%-20px)] max-md:mx-[10px] max-sm:w-full max-sm:mx-0">
             <h5 className='!text-[18px] !font-[600]'>Follow Us</h5>
-            <ul className='flex mt-[10px]'>
+            <ul className='flex mt-[10px] max-sm:justify-center'>
               <li className='mr-[10px] group'>
                 <div className="iconWrap relative ">
                   <Link href={'/'} className='emptyLink'>.</Link>
