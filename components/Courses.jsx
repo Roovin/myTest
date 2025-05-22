@@ -16,7 +16,7 @@ export default function Courses({data}) {
                         const title = item?.title;
                         const titleWithUrl = title.split(" ").join("-");
                         return (
-                            <div key={i} className="card relative overflow-hidden bg-gray-100 shadow-xs group cursor-pointer w-[calc(33.33%-20px)] mx-[20px] min-h- text-center rounded-[10px]  max-md:w-[calc(50%-20px)] max-md:mx-[10px] max-md:last:mt-[20px] max-sm:w-full max-sm:mx-0 max-sm:mb-[20px] max-sm:last:mt-0 max-md:p-[20px]" >
+                            <div key={i} className="card relative overflow-hidden shadow-xs group cursor-pointer w-[calc(33.33%-20px)] mx-[20px] min-h- text-center rounded-[10px]  max-md:w-[calc(50%-20px)] max-md:mx-[10px] max-md:last:mt-[20px] max-sm:w-full max-sm:mx-0 max-sm:mb-[20px] max-sm:last:mt-0" >
                                 <Link href={item?.cardBtnUrl + titleWithUrl} className='emptyLink !z-[99]'>.</Link>
                                 <div className="bgImg  w-full h-[230px]">
                                     <Image src={item?.image} alt={item?.alt} className='w-full h-full object-cover rounded-[10px] opacity-[0.3]' width={400} height={400} />
