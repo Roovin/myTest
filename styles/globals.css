@@ -404,9 +404,13 @@ p a {
 
 /** Header **/
 header {
-  box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
 }
-
+@media (max-width: 640px) {
+   header .mainNav ul {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+   }
+}
 /** QuoteSlider **/
 .quoteSlider .sliderWrap .slick-list {
   padding: 20px 0 !important;
