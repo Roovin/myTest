@@ -7,10 +7,10 @@ export default function Courses({data}) {
   return (
     <section className="courses ">
         <div className="container">
-            <div className="intro text-center mb-[30px]">
+            <div className="intro text-center mb-[30px]" data-aos="fade-up">
                 <h2 className='!font-[600]'>Our Courses</h2>
             </div>
-            <div className="cardWrapper flex w-[calc(100%+40px)] ml-[-20px] max-md:flex-wrap max-md:w-[calc(100%+20px)] max-md:ml-[-10px] max-sm:w-full max-sm:ml-0">
+            <div data-aos="fade-up" className="cardWrapper flex w-[calc(100%+40px)] ml-[-20px] max-md:flex-wrap max-md:w-[calc(100%+20px)] max-md:ml-[-10px] max-sm:w-full max-sm:ml-0">
                 {
                     data?.map((item, i) => {
                         const title = item?.title;

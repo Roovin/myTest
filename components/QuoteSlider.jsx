@@ -63,10 +63,10 @@ const settings = {
   return (
     <section className="quoteSlider bg-gray-50">
       <div className="container">
-        <div className="intro text-center">
+        <div className="intro text-center" data-aos="fade-up">
           <h2 className='!font-[600]'>What Our Learners Say</h2>
         </div>
-        <div className="sliderWrap ">
+        <div className="sliderWrap " data-aos="fade-up">
           <Slider ref={slickSliderRef} {...settings}>
             {
               data?.map((item, i) => {

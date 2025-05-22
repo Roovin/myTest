@@ -15,11 +15,11 @@ export default function TabWithImage({data}) {
   return (
     <section className="tabWithImage">
         <div className="container">
-            <div className="intro mb-[20px] max-sm:text-center">
+            <div className="intro mb-[20px] max-sm:text-center" data-aos="fade-up">
                 <h2 className='text-black !font-[600] inline-block'>Our Services</h2>
             </div>
             <div className="tabWrapper flex w-[calc(100%+20px)] ml-[-10px] max-md:w-full max-md:ml-0 max-md:block items-center">
-                <div className="tabList w-[50%] mx-[10px] max-md:w-full max-md:mx-0 max-md:mb-[20px]">
+                <div className="tabList w-[50%] mx-[10px] max-md:w-full max-md:mx-0 max-md:mb-[20px]" data-aos="fade-up">
                   {
                     data?.map((item, i) => {
                       return (

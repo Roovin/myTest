@@ -11,10 +11,10 @@ export default function ContactUs() {
         <section className="contactUs bg-gray-50">
             <div className="container">
                 <div className="formWithImage flex w-[calc(100%+40px)] ml-[-20px] items-center max-lg:w-[calc(100%+20px)] max-lg:ml-[-10px] max-md:w-full max-md:ml-0 max-md:flex-wrap">
-                    <div className="imageWrapper w-[calc(50%-20px)] mx-[20px] max-md:w-full max-md:mx-0 max-md:mb-[20px]">
+                    <div className="imageWrapper w-[calc(50%-20px)] mx-[20px] max-md:w-full max-md:mx-0 max-md:mb-[20px]" data-aos="fade-up">
                         <Image src={'/contactUs/article_cover.jpg'} alt='laptop with girl' className="rounded-[10px] max-md:mx-auto" width={500} height={500} />
                     </div>
-                    <div className="formWrap  w-[calc(50%-20px)] mx-[20px] max-md:w-full max-md:mx-0 ">
+                    <div className="formWrap  w-[calc(50%-20px)] mx-[20px] max-md:w-full max-md:mx-0 " data-aos="fade-up">
                         <div className="intro mb-[10px]">
                             <h2 className="!font-[600]">Contact Us</h2>
                         </div>
