@@ -406,7 +406,7 @@ p a {
 header {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
 }
-@media (max-width: 640px) {
+@media (max-width: 595px) {
    header .mainNav ul {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
    }
@@ -416,9 +416,14 @@ header {
   padding: 20px 0 !important;
 }
 .quoteSlider .sliderWrap .slick-slide {
-  margin: 0 10px;
+  margin-right: 20px;
 }
-
+.quoteSlider .sliderWrap {
+  height: 280px;
+}
+.quoteSlider .sliderWrap .slick-slider {
+  height: 100%;
+}
 .quoteSlider .sliderWrap .slick-slider ul.slick-dots {
   margin-top: 20px;
 }
