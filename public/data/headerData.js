@@ -2,7 +2,7 @@ export const headerData = [
     {
         id: '1',
         nav: 'Home',
-        url:'/',
+        url:'',
     },
     {
         id: '2',
