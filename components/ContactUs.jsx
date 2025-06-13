@@ -54,7 +54,7 @@ export default function ContactUs() {
                             <label htmlFor="Massage" className=" text-[0] mb-[10px] !font-[600] ">
                                 Massage
                             </label>
-                            <textarea id="message" class="w-full p-4 border max-lg:p-3 max-md:p-2 border-gray-300 rounded-lg max-lg:mb-[20px]" rows="4" placeholder="Write your message" required="" autocomplete="off" spellcheck="false" />
+                            <textarea id="message" className="w-full p-4 border max-lg:p-3 max-md:p-2 border-gray-300 rounded-lg max-lg:mb-[20px]" rows="4" placeholder="Write your message" required="" plete="off" spellcheck="false" />
                             <ValidationError
                                 prefix="Massage"
                                 field="Massage"

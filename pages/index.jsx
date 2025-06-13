@@ -1,3 +1,4 @@
+
 import React from 'react'
 import HeroBanner from '@/components/HeroBanner'
 import TabWithImage from '@/components/TabWithImage'
@@ -10,10 +11,10 @@ import { tabWithImageData } from '@/public/data/tabWithImageData'
 import { counterData } from '@/public/data/counterData'
 import { courseData } from '@/public/data/courseData'
 import { quoteData } from '@/public/data/quoteData'
+import { useEffect } from 'react'
 
 
 export default function index() {
-
   return (
     <>
       <HeroBanner data={heroBannerData}/>
