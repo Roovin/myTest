@@ -9,16 +9,13 @@ export default function cards() {
             try {
                 const data = await fetch('api/courses');
                 const response = await data.json();
-                console.log(response.course);
                 setCourses(response)
-
             } catch (error) {
                 console.log(error);
             }
         }
         fetchData()
     }, [])
-    console.log(courses.course);
     
   return (
     <section className="cards">
