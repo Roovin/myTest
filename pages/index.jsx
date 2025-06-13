@@ -4,6 +4,7 @@ import HeroBanner from '@/components/HeroBanner'
 import TabWithImage from '@/components/TabWithImage'
 import Counter from '@/components/Counter'
 import Courses from '@/components/Courses'
+import Cards from '@/components/Cards'
 import QuoteSlider from '@/components/QuoteSlider'
 import ContactUs from '@/components/ContactUs'
 import { heroBannerData } from '@/public/data/heroBannerData'
@@ -20,6 +21,7 @@ export default function index() {
       <HeroBanner data={heroBannerData}/>
       <TabWithImage data={tabWithImageData}/>
       <Counter data={counterData} />
+      <Cards />
       <Courses data={courseData} />
       <QuoteSlider data={quoteData} />
       <ContactUs />

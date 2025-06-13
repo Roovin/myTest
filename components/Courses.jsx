@@ -6,22 +6,6 @@ import Image from 'next/image'
 
 
 export default function Courses({ data }) {
-    const [courses, setCourses] = useState([]);
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const data = await fetch('api/courses');
-                const response = await data.json();
-                console.log(response.course);
-                setCourses(response)
-
-            } catch (error) {
-                console.log(error);
-            }
-        }
-        fetchData()
-    }, [])
-
     return (
         <section className="courses ">
             <div className="container">
