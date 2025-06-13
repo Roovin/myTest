@@ -7,7 +7,9 @@ import 'aos/dist/aos.css';
 export default function HeroBanner({data}) {
 
   useEffect(() => {
-    AOS.init({ duration: 800 });
+    AOS.init({ duration: 800,
+      once: true
+     });
   }, []);
   
   return (

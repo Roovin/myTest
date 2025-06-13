@@ -26,10 +26,9 @@ export default function cards() {
             <div className="intro mb-[20px] text-center">
                 <h2 className='!font-[600]'>Fetching cards data from mysql</h2>
             </div>
-            <div className="cardsWrap flex flex-wrap w-[calc(100%+20px)] ml-[-10px]">
+            <div className="cardsWrap flex flex-wrap w-[calc(100%+20px)] ml-[-10px]" data-aos="fade-up">
                 {
                     courses?.course?.map((item) => {
-    
                         return (
                               <div className="card w-[calc(33.33%-20px)] mx-[10px] rounded-[5px] border-black border-[2px] border-solid max-md:w-[calc(50%-20px)] max-md:mx-[10px] max-md:last:mt-[20px] max-sm:w-full max-sm:mx-0 max-sm:mb-[20px] max-sm:last:mt-0">
                                 <div className="imgWrap w-full h-[240px]">
