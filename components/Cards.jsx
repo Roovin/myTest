@@ -34,7 +34,7 @@ export default function cards() {
                                 <div className="content p-[20px]">
                                 <h3 >{item?.course_name}</h3>
                                 <p className='my-[10px] !font-[500]'><b>Price:- </b> {item?.price}</p>
-                                    <div className="btnWrap mt-[30pxs]">
+                                    <div className="btnWrap mt-[30px]">
                                         <Link href={'/'} className='text-black bg-yellow-500 font-[600] rounded-full inline-block px-6 py-3 transition-all duration-300 hover:bg-yellow-600 '>{item?.button}</Link>
                                     </div>
                                 </div>
